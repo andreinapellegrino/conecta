@@ -1,0 +1,15 @@
+@import "./utilities/reset";
+@import "./utilities/globals";
+
+@import "./components/header";
+
+
+@import "./html/main-index";
+@import "./html/main-nosotros";
+@import "./html/main-servicios";
+@import "./html/main-contacto";
+
+
+@import "./components/footer";
+
+@import "./utilities/media-queries";

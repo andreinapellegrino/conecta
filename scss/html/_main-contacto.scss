@@ -1,0 +1,126 @@
+/*MAIN-CONTACTO*/
+
+.main-contacto{
+    .contacto-section{
+        background: linear-gradient(90deg, #272727 0%, #272727 30%, #9d9ea0 30%, #9d9ea0 100%);
+        .contactenos{
+            position: relative;
+            width: 100%;
+            padding: 40px 100px;
+            .box-contacto{
+                position: relative;
+                padding: 30px;
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                grid-template-rows: 4fr 3fr;
+                grid-template-areas: 
+                    "form info"
+                    "form map";
+                grid-gap: 20px;
+                .form{
+                    grid-area: form;
+                    padding: 40px;
+                    box-shadow: 0 5px 20px;
+                    background-color: white;
+                    .formulario-box{
+                        position: relative;
+                        width: 100%;
+                        .row50{
+                            display: flex;
+                            gap: 20px;
+                            .input-box{
+                                display: flex;
+                                flex-direction: column;
+                                margin-bottom: 10px;
+                                width: 50%;
+                                color: #272727;
+                                margin-top: 10px;
+                                margin-bottom: 5px;
+                                font-weight: 500;
+                                input{
+                                    padding: 10px;
+                                    outline: none;
+                                    border: 1px solid #272727;
+                                }
+                            }
+                        }
+                        .row100{
+                            .input-box{
+                                width: 100%;
+                                textarea{
+                                    padding: 10px;
+                                    font-family: sans-serif;
+                                    outline: none;
+                                    border: 1px solid #272727;
+                                    resize: none;
+                                    min-height: 220px;
+                                    margin-bottom: 10px;
+                                }
+                                input[type="submit"]{
+                                    background: #272727;
+                                    color: white;
+                                    border: none;
+                                    border-radius: 10px;
+                                    max-width: 120px;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+                .info{
+                    grid-area: info;
+                    padding: 40px;
+                    box-shadow: 0 5px 20px;
+                    background-color: #272727;
+                    color: white;
+                    h3{
+                        margin-bottom: 20px;
+                    }
+                    p{
+                        padding: 10px;
+                        margin-left: 0;
+                    }
+                    .informacion-contacto{
+                        display: flex;
+                        justify-content: start;
+                        .icono-contacto{    
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                    .redes-contacto{
+                        padding: 10px;
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        a{
+                            padding: 10px;
+                            margin: 2px;
+                            border-radius: 50%;
+                            text-decoration: none;
+                            i{
+                                color:white;
+                                display: flex;
+                                justify-content: center;
+                                &:hover{
+                                    font-size: 2rem;
+                                    border-radius: 50%;
+                                }
+                            }
+                        }
+                    }
+                }
+                .map{
+                    h3{
+                        margin-bottom: 20px;
+                    }
+                    iframe{
+                        width: 100%;
+                        height: 120px;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
