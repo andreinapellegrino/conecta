@@ -52,6 +52,34 @@
     footer{
         margin: top 150px;
     }
+    .main-contacto{
+        .contacto-section{
+            background: $color-principal;
+            .contacto-section{
+                background: $color-principal;
+                .box-contacto{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: auto;
+                    grid-template-areas: 
+                    "form"
+                    "info"
+                    "map";
+                    .formulario-box .row50{
+                        display: flex;
+                        gap: 0;
+                        flex-direction: column;
+                        .input-box{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .map{
+            min-height: 100px;
+        }
+    }
 }
 
 
@@ -98,7 +126,7 @@
     }
     .main-servicios{
         .servicios{
-            background:  #272727 
+            background:  $color-principal; 
         }
     }
     footer{
@@ -110,6 +138,35 @@
         }
         .Copyrigth{
             text-align: center;
+        }
+    }
+    .main-contacto{
+        .contacto-section{
+            background: $color-principal;
+            .contactenos{
+                padding: 10px;
+                .box-contacto{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: auto;
+                    grid-template-areas: 
+                    "form"
+                    "info"
+                    "map";
+                    overflow: auto;
+                    .formulario-box .row50{
+                        display: flex;
+                        gap: 0;
+                        flex-direction: column;
+                        .input-box{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .map{
+            min-height: 100px;
         }
     }
 }

@@ -6,10 +6,11 @@
         background-image: url(./../img/index-img.jpg);
         height: 500px;
         background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(column, center,center);
+        //display: flex;
+        //flex-direction: column;
+        //justify-content: center;
+        //align-items: center;
         h1{
             font-size: 50px;
         }

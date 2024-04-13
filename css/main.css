@@ -35,7 +35,8 @@ header a img {
 header nav ul {
   list-style: none;
   display: flex;
-  column-gap: 15px;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
 }
 header nav ul li a {
   color: #ABB2B9;
@@ -97,7 +98,8 @@ header nav ul li a:hover {
 .main-index .container-home .card-home img {
   width: 100%;
   height: 210px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*MAIN-NOSOTROS*/
@@ -238,6 +240,29 @@ header nav ul li a:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+.main-contacto .contacto-section .contactenos .box-contacto .info .redes-contacto a {
+  padding: 10px;
+  margin: 2px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.main-contacto .contacto-section .contactenos .box-contacto .info .redes-contacto a i {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.main-contacto .contacto-section .contactenos .box-contacto .info .redes-contacto a i:hover {
+  font-size: 2rem;
+  border-radius: 50%;
+}
+.main-contacto .contacto-section .contactenos .box-contacto .map h3 {
+  margin-bottom: 20px;
+}
+.main-contacto .contacto-section .contactenos .box-contacto .map iframe {
+  width: 100%;
+  height: 120px;
+  padding: 0;
+}
 
 /*FOOTER*/
 footer {
@@ -306,6 +331,29 @@ footer .Copyrigth {
   footer {
     margin: top 150px;
   }
+  .main-contacto .contacto-section {
+    background: #272727;
+  }
+  .main-contacto .contacto-section .contacto-section {
+    background: #272727;
+  }
+  .main-contacto .contacto-section .contacto-section .box-contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "form" "info" "map";
+  }
+  .main-contacto .contacto-section .contacto-section .box-contacto .formulario-box .row50 {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+  }
+  .main-contacto .contacto-section .contacto-section .box-contacto .formulario-box .row50 .input-box {
+    width: 100%;
+  }
+  .main-contacto .map {
+    min-height: 100px;
+  }
 }
 @media screen and (max-width: 480px) {
   header {
@@ -356,6 +404,28 @@ footer .Copyrigth {
   footer .Copyrigth {
     text-align: center;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+  .main-contacto .contacto-section {
+    background: #272727;
+  }
+  .main-contacto .contacto-section .contactenos {
+    padding: 10px;
+  }
+  .main-contacto .contacto-section .contactenos .box-contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "form" "info" "map";
+    overflow: auto;
+  }
+  .main-contacto .contacto-section .contactenos .box-contacto .formulario-box .row50 {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+  }
+  .main-contacto .contacto-section .contactenos .box-contacto .formulario-box .row50 .input-box {
+    width: 100%;
+  }
+  .main-contacto .map {
+    min-height: 100px;
+  }
+}/*# sourceMappingURL=main.css.map */
